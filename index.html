@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pixi with GSAP</title>
+    <meta name="description" content="fullscreen 2D WegGL demo">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <style>
+      /* 不要な余白などスタイルをリセット */
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      /* メイン表示領域を画面いっぱいにする */
+      .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Canvas が追加される場所 -->
+    <div id="canvas-container" class="container"></div>
+
+    <!-- PIXI -->
+    <script src="scripts/vendor/pixi.dev.js"></script>
+
+    <!-- GSAP -->
+    <script src="scripts/vendor/gsap/TweenMax.js"></script>
+    <script src="scripts/vendor/gsap/TimelineMax.js"></script>
+
+    <!-- メインスクリプト -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
