@@ -42,7 +42,7 @@ renderPerFrame();
 
 //------------------------------------------------------------------------------
 //
-//  表示要素を表示（画像リソース）
+//  表示要素を生成（画像リソース系）
 //
 //------------------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ assetLoader.on('onComplete', function() {
 
 //------------------------------------------------------------------------------
 //
-//  表示要素を表示（グラフィック系）
+//  表示要素を生成（グラフィック系）
 //
 //------------------------------------------------------------------------------
 
@@ -141,7 +141,7 @@ var getRandomInt = function(min, max) {
 var animateDropTween = function(element) {
   var fromX = getRandomInt(5, window.innerWidth - 10);
   var fromY = getRandomInt(0, window.innerHeight / 4);
-  var distY = getRandomArbitrary(100, window.innerHeight)
+  var distY = getRandomArbitrary(100, window.innerHeight);
 
   var duration = getRandomArbitrary(0.5, 1);
   var delay = getRandomArbitrary(0.3, 0.9);
